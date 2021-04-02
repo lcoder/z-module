@@ -21,12 +21,10 @@ globalThis.zrequire = function (relativePath) {
 globalThis.zdefine = function(moduleCallback) {
   const trace = stackTrace.get();
   const zModulePath = trace[1].getFileName();
-  const exports = moduleCallback(zrequire);
-
-  const module = {
+  const innerModule = {
     path: zModulePath,
-    exports,
+    exports: {},
   }
-
-  stack.push(module)
+  stack.push(innerModule)
+  innerModule.exports = moduleCallback(zrequire);
 }
