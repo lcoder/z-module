@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "d:commonjs": "node zan-test/commonjs/index",
+    "d:z-module": "node zan-test/z-module/index",
+    "d:esmodule": "node --experimental-modules zan-test/esmodule/index.mjs"
   },
   "author": "",
   "license": "ISC",

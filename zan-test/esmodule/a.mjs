@@ -1,5 +1,5 @@
 import moduleB from './b.mjs';
 
-console.log(`a.js, import moduleB=${moduleB}`);
+console.log(`a.mjs, import moduleB=${moduleB}`);
 
 export default "I'm A";
