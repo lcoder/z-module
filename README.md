@@ -1,9 +1,7 @@
+## 从零实现模块系统-说明代码
+
+- `yarn d:commonjs`，查看commonjs规范输出
+- `yarn d:esmodule`，查看es module规范输出
+- `yarn d:z-module`，查看自定义模块规范z-module的输出
 
 
-
-CommonJS 模块加载过程是同步阻塞性地加载，在模块代码被运行前就已经写入了 cache，同一个模块被多次 require 时只会执行一次，重复的 require 得到的是相同的 exports 引用
-
-https://juejin.cn/post/6844904080955932680
-
-
-https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/
